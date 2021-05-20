@@ -1,0 +1,22 @@
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px 5px;
+}
+
+.header {
+  grid-area: 1 / 1 / 4 / 2;
+}
+#storage_amount_app {
+  grid-area: 1 / 2 / 2 / 5;
+}
+#worker_status_app {
+  grid-area: 2 / 2 / 4 / 3;
+}
+#current_que_app {
+  grid-area: 2 / 3 / 3 / 5;
+}
+#bar {
+  grid-area: 3 / 3 / 4 / 5;
+}
