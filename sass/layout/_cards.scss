@@ -1,0 +1,43 @@
+.cards_que {
+  display: flex;
+  background-color: rgb(249, 252, 251);
+  width: 10.5vw;
+  margin: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  justify-content: space-between;
+  overflow-wrap: none;
+  border-radius: 10px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+}
+
+.card_employ {
+  display: flex;
+  background-color: rgb(249, 252, 251);
+  width: 15.5vw;
+  margin: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  justify-content: space-between;
+  overflow-wrap: none;
+  border-radius: 10px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+}
+
+.storage_status {
+  display: flex;
+  background-color: rgb(249, 252, 251);
+  width: 8vw;
+  height: auto;
+  margin: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  /* overflow-wrap: none; */
+  border-radius: 5px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+}

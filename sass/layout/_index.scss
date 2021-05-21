@@ -1,2 +1,11 @@
 @forward "header";
 @forward "grid";
+@forward 'cards';
+
+* {
+  margin: 5px;
+}
+body {
+  box-sizing: border-box;
+  background-color: darkviolet;
+}
