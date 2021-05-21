@@ -1,22 +1,29 @@
 #wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 5px 5px;
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
 }
-
 header {
-  grid-area: 1 / 1 / 4 / 2;
+  grid-area: 1 / 1 / 2 / 2;
+}
+main {
+  grid-area: 1 / 2 / 2 / 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 5px;
+  padding: 2vw;
 }
 #storage_amount_app {
-  grid-area: 1 / 2 / 2 / 5;
+  grid-area: 1 / 1 / 2 / 4;
 }
 #worker_status_app {
-  grid-area: 2 / 2 / 4 / 3;
+  grid-area: 2 / 1 / 4 / 2;
 }
 #current_que_app {
-  grid-area: 2 / 3 / 3 / 5;
+  grid-area: 2 / 2 / 3 / 4;
 }
 #bar {
-  grid-area: 3 / 3 / 4 / 5;
+  grid-area: 3 / 2 / 4 / 4;
 }

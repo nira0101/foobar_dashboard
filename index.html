@@ -7,106 +7,145 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
 
+    
 
-    <div id="wrapper">
-     <header>
-       <div class="logo">
-        <h1>FOOBAR</h1>
-       </div>
-       <nav></nav>
-     </header>
-
-      <article id="worker_status_app">
-        <h2>Employees</h2>
-        <div class="employee_1">
-          <h5>Name</h5>
-          <h3>serving customer</h3>
-          <h4>currently doing</h4>
-        </div>
-        <div class="employee_2">
-          <h5>Name</h5>
-          <h3>serving customer</h3>
-          <h4>currently doing</h4>
-        </div>
-        <div class="employee_3">
-          <h5>Name</h5>
-          <h3>serving customer</h3>
-          <h4>currently doing</h4>
-        </div>
-      </article>
+     
+     <div id="app">
+     <div id="wrapper">
+      <header>
+        The logo
+      </header>
+      <main>
+        <article id="worker_status_app">
+        
+          <h2>BARTENDERS</h2>
+          <section class="card_employ">
+          <div class="employee_1">
+            <h5>Name</h5>
+            <h3>serving customer</h3>
+            <h4>currently doing</h4>
+          </div>
+         </section>
+         <section class="card_employ">
+          <div class="employee_2">
+            <h5>Name</h5>
+            <h3>serving customer</h3>
+            <h4>currently doing</h4>
+          </div>
+        </section>
+        <section class="card_employ">    
+         <div class="employee_3">
+            <h5>Name</h5>
+            <h3>serving customer</h3>
+            <h4>currently doing</h4>
+          </div>
+        </section> 
+        </article>
+     
+    
+      
+        <article id="storage_amount_app">
   
+              <section class="storage_status">
+          <div class="storage_unit_1">
+           <!--  <img src="/elhefe.png" alt="" class="s_img"> -->
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+        <section class="storage_status">
+          <div class="storage_unit_2">
+            <!-- <img src="/fairytaleale.png" alt="" class="s_img"> -->
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+          <section class="storage_status">
+          <div class="storage_unit_3">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+          <section class="storage_status">
+          <div class="storage_unit_4">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div></section>
+          <section class="storage_status">
+          <div class="storage_unit_5">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+          <section class="storage_status">
+          <div class="storage_unit_6">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+          <section class="storage_status">
+          <div class="storage_unit_7">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+          <section class="storage_status">
+          <div class="storage_unit_8">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+          <section class="storage_status">
+          <div class="storage_unit_9">
+            <h3>Barrel</h3>
+            <h4>amount</h4>
+          </div>
+        </section>
+        </article>
+      
+    
+        <article id="current_que_app">
+          <div>
+              <h2>Que</h2>
+          </div>
+       
+          
   
-      <article id="storage_amount_app">
-        <h2>Storage</h2>
-        <div class="storage_unit_1">
-         <!--  <img src="/elhefe.png" alt="" class="s_img"> -->
-          <h3>Barrel</h3>
-          <h4>amount</h4>
+          <div id=que_container> 
+             
+          <template>
+            <section class="cards_que">
+            <article>
+              <h3></h3>
+              <h4></h4>
+              <h5></h5>
+            </article>
+         </section>
+          </template>
         </div>
-        <div class="storage_unit_2">
-          <!-- <img src="/fairytaleale.png" alt="" class="s_img"> -->
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_3">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_4">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_5">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_6">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_7">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_8">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-        <div class="storage_unit_9">
-          <h3>Barrel</h3>
-          <h4>amount</h4>
-        </div>
-      </article>
-  
-      <article id="current_que_app">
-        <h2>Que</h2>
-        <div id=que_container></div>
-        <template>
-          <article>
+        </article> 
+     
+        <article id="bar">
+          <section class="cards_que" >
+          <!-- <h1>Bar</h1> -->
+          <div class="bar_info_1">
+            <h2></h2>
+          </div>
+          <div class="bar_info_2">
             <h3></h3>
-            <h4></h4>
-            <h5></h5>
-          </article>
-        </template>
-      </article>
-  
-      <article id="bar">
-        <h1>Bar</h1>
-        <div class="bar_info_1">
-          <h2></h2>
-        </div>
-        <div class="bar_info_2">
-          <h3></h3>
-        </div>
-      </article>
+          </div>
+        </section>
+        </article>
+      </main>
+      
     </div>
 
   
 
   </div>
 
+<footer>footer</footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
