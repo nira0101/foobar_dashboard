@@ -27,18 +27,20 @@ header {
   background-color: crimson;
 }
 #storage_amount_app {
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /*   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+
   grid-gap: 5px;
   background-color: #beb07e;
   justify-content: center;
-  margin: 10px;
-  /* padding: 5px; */
+  /*   margin: 10px; */
 }
 
 #worker_status_app {
   display: grid;
+  /*  margin: auto; */
   grid-template-columns: 1fr;
   background-color: #dad7cd;
   margin-left: 10px;
@@ -51,12 +53,12 @@ header {
 }
 
 #que_container {
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   background-color: #161614;
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  margin: 15px;
 }
 
 #bar {
