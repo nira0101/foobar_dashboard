@@ -30,7 +30,7 @@ function displayEmployeeData(){
   let counter = 0;
   selector.forEach( () => {
       counter++
-      document.querySelector(`#worker_status_app .employee_${counter} h5`).innerHTML = globalData.bartenders[(counter-1)].name;
+      document.querySelector(`#worker_status_app .employee_${counter} h2`).innerHTML = globalData.bartenders[(counter-1)].name;
       document.querySelector(`#worker_status_app .employee_${counter} h3`).innerHTML = `Customer: ${globalData.bartenders[(counter-1)].servingCustomer}`;
       document.querySelector(`#worker_status_app .employee_${counter} h4`).innerHTML = globalData.bartenders[(counter-1)].statusDetail;
   })
@@ -43,8 +43,8 @@ function displayStorageData() {
   let counter = 0;
   selector.forEach( () => {
       counter++
-      document.querySelector(`#storage_amount_app .storage_unit_${counter} h3`).innerHTML =/* "Name: "  +  */globalData.storage[(counter-1)].name;
-      document.querySelector(`#storage_amount_app .storage_unit_${counter} h4`).innerHTML = /* "Amount: " +  */globalData.storage[(counter-1)].amount;
+      document.querySelector(`#storage_amount_app .storage_unit_${counter} h3`).innerHTML ="Name: "  + globalData.storage[(counter-1)].name;
+      document.querySelector(`#storage_amount_app .storage_unit_${counter} h4`).innerHTML = "Amount: " + globalData.storage[(counter-1)].amount;
   })
 
 

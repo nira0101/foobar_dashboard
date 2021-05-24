@@ -15,16 +15,19 @@ main {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px 10px;
+  gap: 20px 10px;
   margin: 3vw;
   height: 100vh;
 }
 #storage_amount_app {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.status_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 0.5fr);
   gap: 0px 0px;
-  grid-area: 1 / 1 / 2 / 3;
 }
 #worker_status_app {
   grid-area: 2 / 1 / 4 / 2;
