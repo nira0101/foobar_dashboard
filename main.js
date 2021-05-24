@@ -41,10 +41,10 @@ function displayStorageData() {
   const selector = document.querySelectorAll("#storage_amount_app div");
 
   let counter = 0;
-  selector.forEach( () => {
+  selector.forEach( () => {                                   
       counter++
       document.querySelector(`#storage_amount_app .storage_unit_${counter} h3`).innerHTML = globalData.storage[(counter-1)].name;
-      document.querySelector(`#storage_amount_app .storage_unit_${counter} h4`).innerHTML = globalData.storage[(counter-1)].amount;
+      document.querySelector(`#storage_amount_app .storage_unit_${counter} h4`).innerHTML = `Quantity: ${globalData.storage[(counter-1)].amount}`;
   })
 
 
@@ -62,13 +62,13 @@ function displayQue() {
   globalData.queue.forEach( (person) => {
   
       counter++
-      const klon = template.cloneNode(true).content;
+      const copy = template.cloneNode(true).content;
       
-      klon.querySelector(`h3`).innerHTML = counter + ". in que";
-      klon.querySelector(`h4`).innerHTML = person.id;
-      klon.querySelector(`h5`).innerHTML = person.order.join();
+      copy.querySelector(`h3`).innerHTML = counter + ". QUEUE";
+      copy.querySelector(`h4`).innerHTML = person.id;
+      copy.querySelector(`h5`).innerHTML = person.order.join();
 
-      container.appendChild(klon); 
+      container.appendChild(copy); 
   });
  
  
@@ -80,8 +80,8 @@ function displayBar(){
 
   barSelector.forEach(()=>{
    
-    document.querySelector(".bar_info_1 h2").innerHTML = globalData.bar.name; 
-   document.querySelector(".bar_info_2 h3").innerHTML = globalData.bar.closingTime; 
+    document.querySelector(".bar_info_1 h2").innerHTML = globalData.bar.name;
+   document.querySelector(".bar_info_2 h3").innerHTML = `closing Time: ${ globalData.bar.closingTime}`; 
   })
 }
 

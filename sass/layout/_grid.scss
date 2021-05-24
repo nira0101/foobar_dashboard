@@ -1,14 +1,13 @@
 #wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /*  grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /*   grid-template-rows: 1fr 1fr 1fr; */
   gap: 5px 5px;
   grid-template-areas:
     "storage_amount_app storage_amount_app storage_amount_app storage_amount_app"
     "worker_status_app current_que_app- current_que_app- current_que_app-"
     "worker_status_app bar bar bar";
-
-  background-color: forestgreen;
 }
 #storage_amount_app {
   grid-area: storage_amount_app;
@@ -29,43 +28,45 @@ header {
 }
 #storage_amount_app {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
-  background-color: cornflowerblue;
+  background-color: #beb07e;
   justify-content: center;
   margin: 10px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 #worker_status_app {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr;
-  background-color: burlywood;
-  justify-content: center;
+  background-color: #dad7cd;
+  margin-left: 10px;
+  align-content: flex-start;
 }
+
 #current_que_app {
   display: grid;
-  background-color: #e6e6e6;
-  grid-template-columns: repet(3, 1fr);
-  grid-template-rows: 2fr;
+  background-color: #ebc342;
 }
+
 #que_container {
-  background-color: darkgreen;
-  display: flex;
-  justify-content: start;
-
-  align-items: center;
-
-  flex-wrap: nowrap;
-  padding: 15px;
-}
-#bar {
   display: grid;
-  /*  grid-area: 3 / 3 / 4 / 5; */
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #161614;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin: 15px;
+}
+
+#bar {
+  display: flex;
   background-color: chocolate;
-  margin-top: 10px;
+  margin: 10px;
+  gap: 1px;
+  margin-left: 1px;
+  margin-bottom: 0px;
+  justify-content: flex-end;
 }
 .title_storage {
   justify-content: center;
