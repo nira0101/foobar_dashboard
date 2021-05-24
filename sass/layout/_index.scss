@@ -1,12 +1,10 @@
 @forward "header";
 @forward "grid";
 @forward 'cards';
+@forward 'main';
 
 * {
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
-}
-body {
-  background-color: darkviolet;
 }

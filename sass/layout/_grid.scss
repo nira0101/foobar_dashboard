@@ -1,29 +1,44 @@
+@use "../base/color";
+@use "../base/font";
 #wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 10px;
+  grid-template-rows: -0.7fr 1.7fr;
+  gap: 6px 0px;
 }
 header {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 5;
+  background-color: color.$primary-color;
 }
 main {
-  grid-area: 1 / 2 / 2 / 5;
+  grid-area: 2 / 1 / 3 / 5;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.7fr 1.3fr;
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px 5px;
-  padding: 2vw;
+  gap: 10px 10px;
+  margin: 3vw;
+  height: 100vh;
 }
 #storage_amount_app {
-  grid-area: 1 / 1 / 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
+  gap: 0px 0px;
+  grid-area: 1 / 1 / 2 / 3;
 }
 #worker_status_app {
   grid-area: 2 / 1 / 4 / 2;
 }
 #current_que_app {
-  grid-area: 2 / 2 / 3 / 4;
+  grid-area: 2 / 2 / 3 / 3;
 }
 #bar {
-  grid-area: 3 / 2 / 4 / 4;
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+#que_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 5px 5px;
 }
