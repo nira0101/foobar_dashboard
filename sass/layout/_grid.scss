@@ -34,6 +34,7 @@ main {
 }
 #current_que_app {
   grid-area: 2 / 2 / 3 / 3;
+  background-color: color.$background-color;
 }
 #bar {
   grid-area: 3 / 2 / 4 / 3;
