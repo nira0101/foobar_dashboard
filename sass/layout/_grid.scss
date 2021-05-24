@@ -2,46 +2,76 @@
 @use "../base/font";
 #wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: -0.7fr 1.7fr;
-  gap: 6px 0px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /*   grid-template-rows: -0.7fr 1.7fr; */
+  /* gap: 6px 0px; */
+  gap: 5px 5px;
+  grid-template-areas:
+    "storage_amount_app storage_amount_app storage_amount_app storage_amount_app"
+    "worker_status_app current_que_app- current_que_app- current_que_app-"
+    "worker_status_app bar bar bar";
+  #storage_amount_app {
+    grid-area: storage_amount_app;
+  }
+  #worker_status_app {
+    grid-area: worker_status_app;
+  }
+  #current_que_app- {
+    grid-area: current_que_app-;
+  }
+  #bar {
+    grid-area: bar;
+  }
 }
+
 header {
   grid-area: 1 / 1 / 2 / 5;
   background-color: color.$primary-color;
 }
-main {
-  grid-area: 2 / 1 / 3 / 5;
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 20px 10px;
-  margin: 3vw;
-  height: 100vh;
-}
+
 #storage_amount_app {
+  margin: auto;
+  display: grid;
+  /*   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+  /*  grid-template-columns: repeat(4, 1fr); */
+
+  grid-gap: 5px;
   grid-area: 1 / 1 / 2 / 3;
 }
 
 .status_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 0.5fr);
+  grid-template-columns: repeat(3, 1fr);
+  /*  grid-template-rows: repeat(3, 0.5fr); */
   gap: 0px 0px;
+
+  border-radius: 5px;
 }
 #worker_status_app {
-  grid-area: 2 / 1 / 4 / 2;
+  display: grid;
+  /*  margin: auto; */
+  grid-template-columns: 1fr;
+  background-color: #dad7cd;
+  margin-left: 10px;
+  align-content: flex-start;
+  /*  grid-area: 2 / 1 / 4 / 2; */
 }
 #current_que_app {
-  grid-area: 2 / 2 / 3 / 3;
+  /*  grid-area: 2 / 2 / 3 / 3; */
+  display: grid;
+  background-color: #f0efeb;
+  border-radius: 5px;
 }
 #bar {
-  grid-area: 3 / 2 / 4 / 3;
+  /*  grid-area: 3 / 2 / 4 / 3; */
+  margin: 5px;
+  justify-content: space-between;
 }
 
 #que_container {
+  /*  margin: auto; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 5px 5px;
 }

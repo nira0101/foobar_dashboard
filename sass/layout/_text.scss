@@ -5,27 +5,43 @@
   h3 {
     font-family: font.$monteserrat;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 1vw;
   }
   h4 {
     font-family: font.$raleway;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
-
+h2 {
+  justify-content: center;
+}
 .beer_status {
   font-family: font.$raleway;
   color: color.$font-color;
   margin-left: 1vw;
   text-transform: uppercase;
   font-size: 21px;
+  justify-content: center;
+  display: flex;
 }
 
 .bartender {
   font-family: font.$raleway;
   color: color.$font-color;
-  font-size: 21px;
   margin-left: 1vw;
-  margin-bottom: 1vw;
+  text-transform: uppercase;
+  font-size: 21px;
+  justify-content: center;
+  display: flex;
+}
+.queue {
+  font-family: font.$raleway;
+  color: color.$font-color;
+  margin-left: 1vw;
+  text-transform: uppercase;
+  font-size: 21px;
+  justify-content: center;
+  display: flex;
+  background-color: darkgray;
 }

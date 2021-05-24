@@ -2,40 +2,27 @@
 .cards_que {
   display: flex;
   background-color: rgb(249, 252, 251);
-  width: auto;
+  /*  width: auto; */
   margin: 10px;
   flex-wrap: wrap;
   padding: 10px;
   gap: 5px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   overflow-wrap: none;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
 }
 
 .card_employ {
-  /*  display: flex;
-  background-color: rgb(249, 252, 251);
-  width: auto;
-  margin: 10px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 10px;
-  align-items: center;
-  gap: 25px;
-  justify-content: space-between;
-  overflow-wrap: none;
-  border-radius: 10px;
-  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22); */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   height: auto;
-  margin-bottom: 28px;
+  margin: 10px;
   gap: 10px;
+  background-color: rgb(245, 241, 237);
 }
 
 .storage_status {
@@ -43,29 +30,50 @@
   margin: 5px 10px;
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
 }
 
-.storage_status > div {
+.storage_status /* > div  */ {
   padding: 3vw;
 }
 
 .employee_photo {
+  display: flex;
   background-color: color.$background-color;
-  height: 20vw;
-  width: 20vw;
-  padding: 1vw;
+
+  height: 5vw;
+  width: 5vw;
+  padding: 0vw;
   display: flex;
   border-radius: 50%;
+  margin: 10px;
 }
-.card_employ > div {
-  background-color: color.$secondary-color;
-  width: 100%;
-  padding: 1.5vw;
+.card_employ /* > div */ {
   display: flex;
+  background-color: color.$secondary-color;
+  padding: 10px;
   justify-content: center;
+  align-content: center;
+  margin: 10px;
+  gap: 5px;
+  overflow-wrap: none;
+  border-radius: 5px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
 
-  flex-direction: column;
-  width: 20vw;
+  flex-wrap: wrap;
+}
+
+.cards_bar {
+  display: flex;
+  background-color: rgb(235, 119, 74);
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  justify-content: space-between;
+  overflow-wrap: hidden;
+  border-radius: 5px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
 }
