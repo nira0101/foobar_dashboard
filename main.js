@@ -64,7 +64,11 @@ function displayQue() {
       counter++
       const klon = template.cloneNode(true).content;
       
+<<<<<<< HEAD
       klon.querySelector(`h3`).innerHTML = counter + ". In Queue";
+=======
+      klon.querySelector(`h3`).innerHTML = counter + ". In queue";
+>>>>>>> 1058190a82f47e7e97d5eded58f007738a271b60
       klon.querySelector(`h4`).innerHTML = person.id;
       klon.querySelector(`h5`).innerHTML = person.order.join();
 

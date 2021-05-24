@@ -56,6 +56,7 @@
   background-color: color.$secondary-color;
   padding: 10px;
   justify-content: center;
+<<<<<<< HEAD
   align-content: center;
   margin: 10px;
   gap: 5px;
@@ -76,4 +77,10 @@
   overflow-wrap: hidden;
   border-radius: 5px;
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+=======
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+  flex-direction: column;
+  width: 20vw;
+  margin: 1vw;
+>>>>>>> 1058190a82f47e7e97d5eded58f007738a271b60
 }
