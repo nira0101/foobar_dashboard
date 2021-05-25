@@ -10,5 +10,7 @@
     "sass": "^1.32.13",
     "vite": "^2.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "digital-clock": "^1.0.2"
+  }
 }

@@ -1,6 +1,6 @@
 import './sass/style.scss'
 
- 
+import "./node_modules/digital-clock/clock.js" 
 
 "use strict"
 
