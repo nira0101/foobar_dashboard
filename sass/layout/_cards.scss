@@ -23,7 +23,7 @@
   margin: 10px;
   gap: 10px;
   background-color: rgb(245, 241, 237);
-  background-color: color.$secondary-color;
+  background-color: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
 }
@@ -56,31 +56,6 @@
 }
 .card_employ > div {
   display: flex;
-<<<<<<< HEAD
-  background-color: beige;
-  padding: 10px;
-  justify-content: center;
-  align-content: center;
-  margin: 10px;
-  gap: 5px;
-  overflow-wrap: none;
-  border-radius: 5px;
-  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
-
-  flex-wrap: wrap;
-}
-
-.cards_bar {
-  display: flex;
-  background-color: rgb(235, 119, 74);
-  flex-wrap: wrap;
-  padding: 10px;
-  gap: 5px;
-  justify-content: space-between;
-  overflow-wrap: hidden;
-  border-radius: 5px;
-  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
-=======
   background-color: var(--secondary-color);
   padding: 10px;
   justify-content: center;
@@ -88,5 +63,4 @@
   flex-direction: column;
   width: 20vw;
   margin: 1vw;
->>>>>>> 37e2d5f7c247f24b8a26945c0ada6404d8a02b6d
 }

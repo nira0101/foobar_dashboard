@@ -3,22 +3,11 @@
 
 #wrapper {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(3, 1fr);
-  /*   grid-template-rows: -0.7fr 1.7fr; */
-  /* gap: 6px 0px; */
-  gap: 5px 5px;
-  grid-template-areas:
-    "storage_amount_app storage_amount_app storage_amount_app storage_amount_app"
-    "worker_status_app current_que_app- current_que_app- current_que_app-"
-    "worker_status_app bar bar bar";
-=======
   grid-template-columns: 0.6fr 1.4fr 1fr;
   grid-template-rows: 1fr 1.4fr 0.6fr;
   gap: 15px 15px;
   margin: 0 5vw;
 
->>>>>>> 37e2d5f7c247f24b8a26945c0ada6404d8a02b6d
   #storage_amount_app {
     grid-area: 1 / 1 / 2 / 4;
   }
@@ -47,12 +36,7 @@ header {
 
 .status_grid {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(4, 1fr);
-  /*  grid-template-rows: repeat(3, 0.5fr); */
-=======
   grid-template-columns: repeat(3, 1fr);
->>>>>>> 37e2d5f7c247f24b8a26945c0ada6404d8a02b6d
   gap: 0px 0px;
 
   border-radius: 5px;
@@ -66,20 +50,10 @@ header {
   align-content: flex-start;
 }
 #current_que_app {
-<<<<<<< HEAD
-  /* grid-area: 2 / 2 / 3 / 3; */
-  display: grid;
-  background-color: #f0efeb;
-  border-radius: 5px;
-}
-#bar {
-  grid-area: 3 / 2 / 4 / 3;
-=======
   background-color: var(--background-color);
   border-radius: 5px;
 }
 #bar {
->>>>>>> 37e2d5f7c247f24b8a26945c0ada6404d8a02b6d
   margin: 5px;
   justify-content: space-between;
   margin-top: 2vw;
@@ -93,11 +67,6 @@ header {
 #que_container {
   margin: auto;
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 5px 5px;
-=======
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 0.5fr);
   gap: 10px 10px;
@@ -126,5 +95,4 @@ header {
     margin-top: 1vw;
     color: var(--font-color-two);
   }
->>>>>>> 37e2d5f7c247f24b8a26945c0ada6404d8a02b6d
 }

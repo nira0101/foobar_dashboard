@@ -33,13 +33,15 @@ nav {
   text-align: center;
 
   border-radius: 50%; /*To change how round the edges are*/
-  background-color: var(--secondary-color); /*To change the background color of the clock*/
+  background-color: var(
+    --secondary-color
+  ); /*To change the background color of the clock*/
   height: 20vw;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  color: white;
+  color: var(--font-color-two);
   box-shadow: 9px 9px 17px 1px rgb(0 0 0 / 22%);
 }
 
@@ -49,7 +51,9 @@ nav {
   text-align: center;
   border: 1px solid #588157;
   border-radius: 50%; /*To change how round the edges are*/
-  background-color: var(--background-color); /*To change the background color of the clock*/
+  background-color: var(
+    --background-color
+  ); /*To change the background color of the clock*/
   height: 20vw;
   display: flex;
   justify-content: center;
