@@ -11,9 +11,18 @@
 
     
  <header>
-        <div class="logo"><h1>FOOBAR</h1></div>
+        <!-- <h1>FOOBAR</h1> -->
+        <img src="/MicrosoftTeams-image (6).png" alt="" class="foo-logo">
       </header>
       <main> 
+        <section id="nav">
+          <div class="dashboard">
+          <h1 class="dash"> DASH<br>BOARD</h1>
+          </div>
+          <div class="toggle-container">
+            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+        </div>
+        </section>
         <h1 class="beer_status">Beer Storage Status</h1>
      <div id="app">
      <div id="wrapper">
@@ -141,15 +150,9 @@
         </article>
     
         <article id="current_que_app">
-<<<<<<< HEAD
-          <div>
-              <h1 class="queue">Queue</h1>
-          </div>
-=======
         
-              <h2 class="que">Queue</h2>
+              <h2 class="que">QUEUE</h2>
         
->>>>>>> 1058190a82f47e7e97d5eded58f007738a271b60
        
           
   
@@ -173,12 +176,17 @@
      
         <article id="bar">
           <section class="cards_bar" >
-          <!-- <h1>Bar</h1> -->
+         
           <div class="bar_info_1">
-            <h2></h2>
+            <div class="digital-clock"></div> 
+            <h1 class="current-time">Current Time</h1>
           </div>
           <div class="bar_info_2">
-            <h3></h3>
+            <div class="bar_info_time">
+              <h3></h3>
+            </div>
+            <h1 class="closing_time">Closing Time</h1>
+            
           </div>
         </section>
         </article>
@@ -188,5 +196,7 @@
 
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="./node_modules/digital-clock/clock.js"></script>
+    
   </body>
 </html>

@@ -1,7 +1,7 @@
 @use "../base/color";
 .cards_que {
   display: flex;
-  background-color: rgb(249, 252, 251);
+  background-color: var(--queue-color);
   /*  width: auto; */
   margin: 10px;
   flex-wrap: wrap;
@@ -26,7 +26,7 @@
 }
 
 .storage_status {
-  background-color: color.$secondary-color;
+  background-color: var(--secondary-color);
   margin: 5px 10px;
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
   display: flex;
@@ -42,10 +42,10 @@
 
 .employee_photo {
   display: flex;
-  background-color: color.$background-color;
+  background-color: var(--background-color);
 
-  height: 5vw;
-  width: 5vw;
+  height: 15vw;
+  width: 15vw;
   padding: 0vw;
   display: flex;
   border-radius: 50%;
@@ -53,34 +53,11 @@
 }
 .card_employ /* > div */ {
   display: flex;
-  background-color: color.$secondary-color;
+  background-color: var(--secondary-color);
   padding: 10px;
   justify-content: center;
-<<<<<<< HEAD
-  align-content: center;
-  margin: 10px;
-  gap: 5px;
-  overflow-wrap: none;
-  border-radius: 5px;
-  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
-
-  flex-wrap: wrap;
-}
-
-.cards_bar {
-  display: flex;
-  background-color: rgb(235, 119, 74);
-  flex-wrap: wrap;
-  padding: 10px;
-  gap: 5px;
-  justify-content: space-between;
-  overflow-wrap: hidden;
-  border-radius: 5px;
-  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
-=======
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
   flex-direction: column;
   width: 20vw;
   margin: 1vw;
->>>>>>> 1058190a82f47e7e97d5eded58f007738a271b60
 }
