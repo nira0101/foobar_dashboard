@@ -1,7 +1,7 @@
 @use "../base/color";
 .cards_que {
   display: flex;
-  background-color: rgb(249, 252, 251);
+  background-color: var(--queue-color);
   /*  width: auto; */
   margin: 10px;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@
 }
 
 .storage_status {
-  background-color: color.$secondary-color;
+  background-color: var(--secondary-color);
   margin: 5px 10px;
 
   display: flex;
@@ -45,10 +45,10 @@
 
 .employee_photo {
   display: flex;
-  background-color: color.$background-color;
+  background-color: var(--background-color);
 
-  height: 5vw;
-  width: 5vw;
+  height: 15vw;
+  width: 15vw;
   padding: 0vw;
   display: flex;
   border-radius: 50%;
@@ -56,6 +56,7 @@
 }
 .card_employ > div {
   display: flex;
+<<<<<<< HEAD
   background-color: beige;
   padding: 10px;
   justify-content: center;
@@ -79,4 +80,13 @@
   overflow-wrap: hidden;
   border-radius: 5px;
   box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+=======
+  background-color: var(--secondary-color);
+  padding: 10px;
+  justify-content: center;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+  flex-direction: column;
+  width: 20vw;
+  margin: 1vw;
+>>>>>>> 37e2d5f7c247f24b8a26945c0ada6404d8a02b6d
 }

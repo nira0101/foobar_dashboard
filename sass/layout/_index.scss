@@ -2,9 +2,16 @@
 @forward "grid";
 @forward 'cards';
 @forward 'text';
+@forward 'theme';
+
+@use "../base/color";
 
 * {
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
 }

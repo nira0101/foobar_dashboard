@@ -1,7 +1,11 @@
 import './sass/style.scss'
+import "./node_modules/digital-clock/clock.js";
+ 
+
 "use strict"
 
 window.addEventListener("DOMContentLoaded", init )
+
 
 
 let globalData = {};
@@ -12,7 +16,7 @@ function init(){
 }
 async function fetchData() {
 
-  const response = await fetch('https://foobar-jearasfix.herokuapp.com/');
+  const response = await fetch('https://foobardata.herokuapp.com/');
   const jsonData = await response.json();
 
   globalData = jsonData; // global variable in inline script in index.html to use this fetch in all components
@@ -64,7 +68,7 @@ function displayQue() {
       counter++
       const klon = template.cloneNode(true).content;
       
-      klon.querySelector(`h3`).innerHTML = counter + ". In Queue";
+      klon.querySelector(`h3`).innerHTML = counter + ". In queue";
       klon.querySelector(`h4`).innerHTML = person.id;
       klon.querySelector(`h5`).innerHTML = person.order.join();
 
@@ -80,9 +84,30 @@ function displayBar(){
 
   barSelector.forEach(()=>{
    
-    document.querySelector(".bar_info_1 h2").innerHTML = globalData.bar.name; 
-   document.querySelector(".bar_info_2 h3").innerHTML = globalData.bar.closingTime; 
+     
+   document.querySelector(".bar_info_time h3").innerHTML = globalData.bar.closingTime; 
   })
 }
 
+
+//dark and light theme
+
+const checkbox = document.querySelector('input[name=theme]');
+
+checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+    }
+})
+
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+    }, 1000)
+}
 
