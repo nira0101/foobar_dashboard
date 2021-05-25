@@ -17,18 +17,21 @@
 .card_employ {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: auto;
   margin: 10px;
   gap: 10px;
   background-color: rgb(245, 241, 237);
+  background-color: color.$secondary-color;
+  border-radius: 5px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
 }
 
 .storage_status {
   background-color: color.$secondary-color;
   margin: 5px 10px;
-  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+
   display: flex;
   align-content: center;
   justify-content: center;
@@ -51,9 +54,9 @@
   border-radius: 50%;
   margin: 10px;
 }
-.card_employ /* > div */ {
+.card_employ > div {
   display: flex;
-  background-color: color.$secondary-color;
+  background-color: beige;
   padding: 10px;
   justify-content: center;
   align-content: center;

@@ -2,7 +2,7 @@
 @use "../base/font";
 #wrapper {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
   /*   grid-template-rows: -0.7fr 1.7fr; */
   /* gap: 6px 0px; */
   gap: 5px 5px;
@@ -41,7 +41,7 @@ header {
 
 .status_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /*  grid-template-rows: repeat(3, 0.5fr); */
   gap: 0px 0px;
 
@@ -57,13 +57,13 @@ header {
   /*  grid-area: 2 / 1 / 4 / 2; */
 }
 #current_que_app {
-  /*  grid-area: 2 / 2 / 3 / 3; */
+  /* grid-area: 2 / 2 / 3 / 3; */
   display: grid;
   background-color: #f0efeb;
   border-radius: 5px;
 }
 #bar {
-  /*  grid-area: 3 / 2 / 4 / 3; */
+  grid-area: 3 / 2 / 4 / 3;
   margin: 5px;
   justify-content: space-between;
 }
@@ -72,6 +72,6 @@ header {
   /*  margin: auto; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 5px 5px;
 }
