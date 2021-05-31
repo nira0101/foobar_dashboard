@@ -1,6 +1,5 @@
 import './sass/style.scss'
-
-import "./node_modules/digital-clock/clock.js" 
+import showTime from "./node_modules/digital-clock/clock.js";
 
 "use strict"
 
@@ -110,4 +109,4 @@ let trans = () => {
         document.documentElement.classList.remove('transition')
     }, 1000)
 }
-
+setInterval(showTime, 1000);
