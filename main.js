@@ -1,5 +1,17 @@
 import './sass/style.scss'
-import showTime from "./node_modules/digital-clock/index.js";
+import * as ClockWidget from "js-easy-clock";
+const config = { 
+  width: 300, 
+  height: 300, 
+  radius: 80, 
+  watchFace: 'FACE_3' 
+}
+let clock = new ClockWidget.ClockApp(document.getElementById('myClock'), config);
+
+
+
+/* import showTime from "./node_modules/digital-clock/index.js"; */
+
 
 "use strict"
 
@@ -109,4 +121,11 @@ let trans = () => {
         document.documentElement.classList.remove('transition')
     }, 1000)
 }
-setInterval(showTime, 1000);
+
+
+
+/* setInterval(showTime, 1000); */
+
+
+
+

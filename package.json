@@ -11,6 +11,6 @@
     "vite": "^2.3.3"
   },
   "dependencies": {
-    "digital-clock": "^1.0.2"
+    "js-easy-clock": "0.0.5"
   }
 }
