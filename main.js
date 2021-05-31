@@ -1,5 +1,5 @@
 import './sass/style.scss'
-/* import showTime from "./node_modules/digital-clock/clock.js"; */
+import showTime from "./node_modules/digital-clock/index.js";
 
 "use strict"
 
