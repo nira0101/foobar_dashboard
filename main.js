@@ -19,7 +19,7 @@ async function fetchData() {
   const response = await fetch('https://foobardata.herokuapp.com/');
   const jsonData = await response.json();
 
-  globalData = jsonData; // global variable in inline script in index.html to use this fetch in all components
+  globalData = jsonData; 
   displayEmployeeData();
   displayStorageData();
   displayQue();
@@ -47,7 +47,7 @@ function displayStorageData() {
   let counter = 0;
   selector.forEach( () => {
       counter++
-      document.querySelector(`#storage_amount_app .storage_unit_${counter} h3`).innerHTML =/* "Name: "  + */ globalData.storage[(counter-1)].name;
+      document.querySelector(`#storage_amount_app .storage_unit_${counter} h3`).innerHTML = globalData.storage[(counter-1)].name;
       document.querySelector(`#storage_amount_app .storage_unit_${counter} h4`).innerHTML = "Amount: " + globalData.storage[(counter-1)].amount;
   })
 
