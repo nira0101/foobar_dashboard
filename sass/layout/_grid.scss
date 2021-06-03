@@ -8,13 +8,13 @@
   gap: 15px 15px;
   margin: 0 5vw;
 
-  #storage_amount_app {
+  #beer_storage {
     grid-area: 1 / 1 / 2 / 4;
   }
-  #worker_status_app {
+  #bartender {
     grid-area: 2 / 1 / 4 / 2;
   }
-  #current_que_app {
+  #queue_status {
     grid-area: 2 / 2 / 3 / 4;
   }
   #bar {
@@ -28,7 +28,7 @@ header {
   justify-content: center;
 }
 
-#storage_amount_app {
+#beer_storage {
   margin: 1vw auto;
   display: grid;
   grid-gap: 5px;
@@ -49,7 +49,7 @@ header {
   margin-left: 10px;
   align-content: flex-start;
 }
-#current_que_app {
+#queue_status {
   background-color: var(--background-color);
   border-radius: 5px;
 }

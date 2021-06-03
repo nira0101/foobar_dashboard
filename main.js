@@ -40,26 +40,26 @@ async function fetchData() {
 
 
 function displayEmployeeData(){
-  const selector = document.querySelectorAll("#worker_status_app div");
+  const selector = document.querySelectorAll("#bartender div");
 
   let counter = 0;
   selector.forEach( () => {
       counter++
-      document.querySelector(`#worker_status_app .employee_${counter} h2`).innerHTML = globalData.bartenders[(counter-1)].name;
-      document.querySelector(`#worker_status_app .employee_${counter} h3`).innerHTML = `Customer: ${globalData.bartenders[(counter-1)].servingCustomer}`;
-      document.querySelector(`#worker_status_app .employee_${counter} h4`).innerHTML = globalData.bartenders[(counter-1)].statusDetail;
+      document.querySelector(`#bartender .employee_${counter} h2`).innerHTML = globalData.bartenders[(counter-1)].name;
+      document.querySelector(`#bartender .employee_${counter} h3`).innerHTML = `Customer: ${globalData.bartenders[(counter-1)].servingCustomer}`;
+      document.querySelector(`#bartender .employee_${counter} h4`).innerHTML = globalData.bartenders[(counter-1)].statusDetail;
   })
 }
 
 
 function displayStorageData() {
-  const selector = document.querySelectorAll("#storage_amount_app div");
+  const selector = document.querySelectorAll("#beer_storage div");
 
   let counter = 0;
   selector.forEach( () => {
       counter++
-      document.querySelector(`#storage_amount_app .storage_unit_${counter} h3`).innerHTML = globalData.storage[(counter-1)].name;
-      document.querySelector(`#storage_amount_app .storage_unit_${counter} h4`).innerHTML = "Amount: " + globalData.storage[(counter-1)].amount;
+      document.querySelector(`#beer_storage .storage_unit_${counter} h3`).innerHTML = globalData.storage[(counter-1)].name;
+      document.querySelector(`#beer_storage .storage_unit_${counter} h4`).innerHTML = "Amount: " + globalData.storage[(counter-1)].amount;
   })
 
 
@@ -69,7 +69,7 @@ function displayStorageData() {
 function displayQue() {
 
   const container = document.querySelector("#que_container");
-  const template = document.querySelector("#current_que_app template");
+  const template = document.querySelector("#queue_status template");
   container.innerHTML ="";
   
   let counter = 0;
